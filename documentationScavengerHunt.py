@@ -9,18 +9,15 @@
  Explanation video: http://youtu.be/vRB_983kUMc
 """
 
-import sys, pygame
-import random
+import sys, pygame, random
 
 # Define some colors
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-GREEN = (0, 255, 0)
-RED = (255, 0, 0)
-BLUE = (0, 0, 255)
-GREY = (127, 127, 127)
+GREEN = (101, 255, 149)
+RED = (232, 6, 98)
+BLUE = (59, 143, 255)
+BLUE2 = (112, 8, 255)
 
-
+colors = [GREEN, RED, BLUE, BLUE2]
 
 pygame.init()
 
@@ -40,11 +37,17 @@ clock = pygame.time.Clock()
 
 
 # WRITE YOUR CODE HERE
-x_speed=3
-y_speed=3
+x_speed=random.randint(-10, 10)
+y_speed=random.randint(-10, 10)
 
-x=0
-y=0
+size = random.randint(20, 80)
+xb = 700 - size
+yb = 500 - size
+
+x=100
+y=100
+
+
 
 # -------- MAIN PROGRAM LOOP -----------
 while not done:
@@ -55,12 +58,12 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
 
-    if (x<700 and y<500):
+    if (x<xb and y<yb):
         x_speed = x_speed
         y_speed = y_speed
-    if (x>=700 or x<0):
+    if (x>=xb or x<size):
         x_speed = -x_speed
-    if (y>=500 or y<0):
+    if (y>=yb or y<size):
         y_speed = -y_speed
     
     x = x + x_speed
@@ -69,11 +72,11 @@ while not done:
 
     # --- GAME LOGIC should go here
 
-    screen.fill(WHITE)
+    screen.fill(GREEN)
 
     # SCREEN CODE:
 
-    pygame.draw.circle(screen, BLUE, [x, y], 40)
+    pygame.draw.circle(screen, random.choice(colors), [x, y], size)
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
