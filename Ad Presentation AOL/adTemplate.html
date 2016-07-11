@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quaker Oatmeal Ad</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+ 
+<!--
+
+1.) Elements of an Ad. 
+2.) The concept of a box. 
+	2.1) Divs, position, padding, margin. Top, right, bottom, left. 
+
+AD REQUIREMENTS
+1.) Call to action button (CTA), cannot have a height less than 45px. CSS added for cursor:pointer;
+2.) H1 - main headline
+3.) H2 - sub headline
+4.) Logo
+5.) Border
+6.) Interactivity on hover states
+7.) Subtle animation
+
+
+Organize your CSS rules in order of appearance. 
+
+
+POSITIONING CSS: 
+position: relative;
+position: absolute;
+margin: 0px 0px 0px 0px; (top, right, bottom, left)
+padding: 0px 0px 0px 0px; (top, right, bottom, left)
+
+LAYERING CSS:
+z-index: 1;
+z-index: 2; 
+z-index: 3; (topmost)
+You can go up as high as you want i.e. z-index: 10000;
+float: left;
+float: right;
+-->
+
+<style>
+
+		#pageWrapper{
+			width: 300px;
+			height: 250px;
+			margin: 50px auto;
+		}
+
+		.adWrapper{
+			width: 300px;
+			height: 250px;
+			overflow:hidden;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			position: relative;
+			cursor:pointer;
+		}
+		
+		.logo{
+			width: 101px;
+			height: 30px;
+			position: absolute;
+			left: 6px;
+			top: 173px;
+			z-index:3;
+		}
+		
+	
+		.headline{
+			font-size: 20px;
+			color: #000080;
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing: .5px;
+			text-transform: uppercase;
+			z-index:2;
+			position: relative;
+			text-align: center;
+			font-style: bold;
+		}
+		
+		.subHeadline{
+			font-size: 18px;
+			color: #ff3b7c;
+			font-family: "Crimson Text","PT Serif","Hoefler Text",Baskerville,"Baskerville old face",Garamond,Times New Roman,serif;
+			font-style: italic;
+			margin: 0px;
+			position: relative;
+			z-index:2;
+			text-align: center;
+			}
+			
+		.button{
+			width: 212px;
+			position: absolute;
+			padding:3px;
+			bottom:10px;
+			right: 10px;
+			margin:0px;
+			z-index:3;
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			font-style: normal;
+			font-size: 16px;
+			text-align:center;
+			background: #000084;
+			 -webkit-transition: all .25s ease-in-out;
+			 -moz-transition: all .25s ease-in-out;
+			 -o-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+		}
+	
+		.button:hover{
+			background: #8c0000;
+		}
+	
+		#background{
+			width: 300px;
+			height: 250px;
+			position:absolute;
+			top: 0px;
+			left:0px;
+			z-index:0;
+			background: #f9f9f9;
+			/*background: #f9f9f9 url(images/background.jpg) no-repeat;*/
+		}
+			
+		.items{
+			width: 148px;
+			height: 154px;
+			position: absolute;
+			top: 50px;
+			left: 77px;
+			z-index:1;
+			}
+	
+</style>
+
+</head>
+
+<body>
+
+<div id="pageWrapper">
+
+
+       <div class="adWrapper">
+ 
+        
+       <!--CHANGE HEADLINE-->
+       <h1 class="headline">Naturally Heart Healthy</h1>
+    
+    
+        <div class="logo">
+        <img src="images/logo.png" alt="Company Logo"></div>
+
+        
+		<!--BUTTON-->
+        <div class="button">Find Quaker Oats Near You</div>
+        
+
+        	<!--PUT YOUR IMAGES HERE-->
+        	<div id="item1" class="items"><img src="images/apple.png"></div>   
+        	<div id="item2" class="items"><img src="images/berry.png"></div>
+        	<div id="item3" class="items"><img src="images/peach.png"></div>
+   
+    
+    
+    
+   <!--PUT YOUR BACKGROUND HERE-->
+  <div id="background"><img src="images/bkgd.jpg"</div>
+   
+ 
+ </div>
+    
+
+</div>
+
+
+<!--DO NOT EDIT BELOW-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+
+<script>
+
+	var leftArrow = document.getElementById('leftArrow');
+	var rightArrow = document.getElementById('rightArrow');
+	var galleryContainer = document.getElementById('galleryContainer');
+	var item1 = document.getElementById('item1');
+	var item2 = document.getElementById('item2');
+	var item3 = document.getElementById('item3');
+	var images = [item2, item3];
+	
+
+	
+fadeImages();
+  
+  	TweenLite.set(images,{alpha: 0});
+	
+function fadeImages() {
+	
+	 tl = new TimelineMax();
+	 var tl;
+	 
+	 var num = 0;
+	 
+	 for (num = 0; num >= 0;num++) {
+	 tl.to(item1, 2,{alpha:0, delay: 2});
+	 tl.to(item2, 2,{alpha:1},'-=1');
+	 tl.to(item2, 2,{alpha:0, delay: 2});
+	 tl.to(item3, 2,{alpha:1},'-=1');
+	 tl.to(item3, 2,{alpha:0, delay: 2});
+	 tl.to(item1, 2,{alpha:1},'-=1');
+	 }
+        }
+
+</script>
+
+</body>
+</html>
