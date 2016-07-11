@@ -1,5 +1,5 @@
 # GWC-SIP-AOL2016
-Projects created during the Girls Who Code Summer Immersion Program at AOL DC during the summer before my junior year.
+Projects created in various languages during the Girls Who Code Summer Immersion Program at AOL DC during the summer before my junior year (2016).
 
 Ad Presentation AOL: Worked with Spark Creative (AOL's Advertising Team) to develop an ad for a randomly selected brand and audience (Quaker Oats/Women age 55+)
 
