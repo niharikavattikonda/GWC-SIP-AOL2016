@@ -11,7 +11,7 @@ Python Shapes: Experimenting with the turtle functions in Python and using for-l
 
 Text Adventures: Makes choices resulting in different story outcomes based on user input
 
-documentationScavengerHunt.py: Uses Pygame to make a ball bounce across the screen and flash different colors
+Pygame: Uses Pygame to make a ball bounce across the screen and flash different colors
 
 helloWorld.py: First program, says "Hello World!"
 
