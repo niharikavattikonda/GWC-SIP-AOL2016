@@ -5,13 +5,13 @@ Ad Presentation AOL: Worked with Spark Creative (AOL's Advertising Team) to deve
 
 Obamicon: Converts a picture to the same style as Obama's "Hope" 2008 Campaign photo
 
+OOP: Files that were made as exercises during object-oriented programming lessons (mostly using Pygame)
+
 Password Hashing: Stores hashed passwords and decodes already hashed passwords
 
 Python Shapes: Experimenting with the turtle functions in Python and using for-loops to draw shapes
 
 Text Adventures: Makes choices resulting in different story outcomes based on user input
-
-Pygame: Uses Pygame to make a ball bounce across the screen and flash different colors
 
 helloWorld.py: First program, says "Hello World!"
 
