@@ -80,7 +80,7 @@ class Building():
         """
 
     def move(self, speed):
-        self.x_point += speed
+        self.x_point -= speed
         """
         Takes in an integer that represents the speed at which the building is moving
             A positive integer moves the building to the right ->
@@ -130,7 +130,7 @@ class Scroller(object):
         current_width = 0
         while(current_width <= self.width):
             self.add_building(current_width)
-            current_width += 50
+            current_width += self.buildings[-1].width
 
         """
         Will call add_building until there the buildings fill up the width of the
@@ -139,7 +139,7 @@ class Scroller(object):
         
     def add_building(self, x_location):
 
-        self.buildings.append(Building(x_location, 400, 40, 100, BLACK))
+        self.buildings.append(Building(x_location, 400, 50, 100, BLACK))
 
         """
         takes in an x_location, an integer, that represents where along the x-axis to
@@ -158,6 +158,8 @@ class Scroller(object):
     def move_buildings(self):
         for item in self.buildings:
             item.move(2)
+        new_x = self.buildings[-1].x_point + self.buildings[-1].width
+        self.add_building(new_x)
 
         """
         This calls the move method on each building passing in the speed variable
