@@ -53,13 +53,13 @@ while tryAgain > 0:
 	print(gerund3 + " free")
 	print("""Wish I could be,
 	part of that world""")
-	
+
 	tryQ = input("Would you like to try again? Select Y for Yes or N for no ")
 	if tryQ == "N":
 		tryAgain = 0
-		
+
 		print("Game over!")
-		
+
 	if tryQ == "Y":
 		tryAgain = 10
 		print("Let's try that again!")

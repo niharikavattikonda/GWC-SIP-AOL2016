@@ -34,4 +34,3 @@ print("Your person is " + p)
 
 if p == "Ellis Grey":
     print("Sorry! Ellis forgot who you are and stabbed you!")
-
