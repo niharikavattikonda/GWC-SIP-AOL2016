@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+p{
+	font-family: georgia, serif;
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	}
+	
+	
+	.buttons{
+		width: 200px;
+		text-align:center;
+		font-family: 'Oswald', sans-serif;	
+		margin: 20px;
+		padding: 10px;/*we use padding to control the height of these buttons vs. setting a height*/
+		cursor: pointer;
+		color: #fff;
+		border-radius: 8px;
+		text-transform:uppercase;
+		letter-spacing: 1px;
+		font-size: 18px;
+		font-weight: 700;
+		box-sizing: border-box;
+		}
+		
+/*--------------------------GRADIENTS--------------------------*/		
+		
+#button1{
+	background: rgba(237,224,182,1);
+background: -moz-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(239,208,113,1) 50%, rgba(226,172,34,1) 51%, rgba(237,224,182,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,224,182,1)), color-stop(50%, rgba(239,208,113,1)), color-stop(51%, rgba(226,172,34,1)), color-stop(100%, rgba(237,224,182,1)));
+background: -webkit-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(239,208,113,1) 50%, rgba(226,172,34,1) 51%, rgba(237,224,182,1) 100%);
+background: -o-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(239,208,113,1) 50%, rgba(226,172,34,1) 51%, rgba(237,224,182,1) 100%);
+background: -ms-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(239,208,113,1) 50%, rgba(226,172,34,1) 51%, rgba(237,224,182,1) 100%);
+background: linear-gradient(to bottom, rgba(237,224,182,1) 0%, rgba(239,208,113,1) 50%, rgba(226,172,34,1) 51%, rgba(237,224,182,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede0b6', endColorstr='#ede0b6', GradientType=0 );
+}
+	
+#button1:hover{
+	background: rgba(237,224,182,1);
+background: -moz-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(226,172,34,1) 49%, rgba(239,208,113,1) 50%, rgba(237,224,182,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,224,182,1)), color-stop(49%, rgba(226,172,34,1)), color-stop(50%, rgba(239,208,113,1)), color-stop(100%, rgba(237,224,182,1)));
+background: -webkit-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(226,172,34,1) 49%, rgba(239,208,113,1) 50%, rgba(237,224,182,1) 100%);
+background: -o-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(226,172,34,1) 49%, rgba(239,208,113,1) 50%, rgba(237,224,182,1) 100%);
+background: -ms-linear-gradient(top, rgba(237,224,182,1) 0%, rgba(226,172,34,1) 49%, rgba(239,208,113,1) 50%, rgba(237,224,182,1) 100%);
+background: linear-gradient(to bottom, rgba(237,224,182,1) 0%, rgba(226,172,34,1) 49%, rgba(239,208,113,1) 50%, rgba(237,224,182,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede0b6', endColorstr='#ede0b6', GradientType=0 );
+
+	}	
+	
+#button2{
+	background: rgba(255,0,132,1);
+background: -moz-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(128,58,95,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,132,1)), color-stop(100%, rgba(128,58,95,1)));
+background: -webkit-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(128,58,95,1) 100%);
+background: -o-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(128,58,95,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(128,58,95,1) 100%);
+background: linear-gradient(to bottom, rgba(255,0,132,1) 0%, rgba(128,58,95,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#803a5f', GradientType=0 );
+	}
+	
+#button2:hover{
+	background: rgba(255,0,132,1);
+background: -moz-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(64,0,34,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,132,1)), color-stop(100%, rgba(64,0,34,1)));
+background: -webkit-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(64,0,34,1) 100%);
+background: -o-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(64,0,34,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,0,132,1) 0%, rgba(64,0,34,1) 100%);
+background: linear-gradient(to bottom, rgba(255,0,132,1) 0%, rgba(64,0,34,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#400022', GradientType=0 );
+	}	
+
+#button3{
+	color: #666;
+	border: 1px solid #666;
+		background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+	
+	}
+	
+	
+	
+#button3:hover{
+	background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,189,191,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(191,189,191,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,189,191,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,189,191,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,189,191,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,189,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bfbdbf', GradientType=0 );
+	}	
+
+
+
+/*--------------------------CSS TRANSFORMS--------------------------*/	
+
+#button4{
+	color: #fff;
+	background: #ccc;
+	 -webkit-transition: all .25s ease-in-out;
+-moz-transition: all .25s ease-in-out;
+-o-transition: all .25s ease-in-out;
+transition: all .25s ease-in-out;
+	}
+	
+#button4:hover{
+	transform: scale(1.1);
+	}
+	
+#button5{
+	color: #fff;
+	background: #ccc;
+	 -webkit-transition: all .25s ease-in-out;
+-moz-transition: all .25s ease-in-out;
+-o-transition: all .25s ease-in-out;
+transition: all .25s ease-in-out;
+	}
+	
+	
+#button5:hover{
+	 transform: rotate(10deg);
+	}	
+	
+#button6{
+	
+	}
+	
+#button6hover{
+	
+	}
